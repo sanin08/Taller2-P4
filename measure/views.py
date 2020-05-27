@@ -13,13 +13,13 @@ def measure(request):
         if value:
             # Crea el json para realizar la petición POST al Web Service
             args = {'type': 'ph', 'value': value}
-            response = requests.post('http://127.0.0.1:8000/measuressssss/', args)
+           # response = requests.post('http://127.0.0.1:8000/measuressssss/', args)
             response = requests.post('http://pi1-eafit-jssaninv.azurewebsites.net/measuressssss/')
             # Convierte la respuesta en JSON
             measure_json = response.json()
 
     # Realiza una petición GET al Web Services
-    response = requests.get('http://127.0.0.1:8000/measuressssss/')
+    #response = requests.get('http://127.0.0.1:8000/measuressssss/')
     response = requests.get('http://pi1-eafit-jssaninv.azurewebsites.net/measuressssss/')
     # Convierte la respuesta en JSON
     measuressssss = response.json()
