@@ -3,11 +3,13 @@
 <div class="container">
     <form method="get">
         <input type="number" name="value">
+        <input type="number" name="longitud">
+        <input type="number" name="latitud">
         <button type="submit">Adicionar</button>
     </form>
     {% for measure in measuressssss %}
     <ul class="list-group">
-        <li class="list-group-item">{{measure.type}} = {{measure.value}}</li>
+        <li class="list-group-item">Tipo={{measure.type}}; Valor = {{measure.value}};Latitud={{measure.latitud}};Longitud={{measure.longitud}}</li>
     </ul>
     {% endfor %}
 </div>
